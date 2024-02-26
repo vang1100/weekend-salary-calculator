@@ -29,3 +29,9 @@ function deleteRemove(event){
     console.log(event.target);
     event.target.parentElement.parentElement.remove();
 }
+
+function clearFields(){
+    document.getElementById("submitButtonForm").value = " ";
+}
+
+clearFields();
