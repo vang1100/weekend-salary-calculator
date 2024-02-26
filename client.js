@@ -40,6 +40,7 @@ function deleteRemove(event){
 function calculateSalary () {
     let totalMonthly = document.querySelector('span').innerText;
     console.log('testing total monthly', totalMonthly);
+    return totalMonthly += annualSalary;
 }
 
 calculateSalary();
