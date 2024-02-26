@@ -1,6 +1,6 @@
 console.log('hello world');
 
-let employeeSalary=0;
+let totalAnnualSalary=0;
 
 function submitForm(event){
     console.log('submit');
@@ -23,6 +23,7 @@ function submitForm(event){
         <td><button onClick="deleteRemove(event)" class="remove-button">Remove</button></td>
     </tr>
     `
+    
 }
 
 function deleteRemove(event){
@@ -30,8 +31,8 @@ function deleteRemove(event){
     event.target.parentElement.parentElement.remove();
 }
 
-function clearFields(){
-    document.getElementById("submitButtonForm").value = " ";
-}
+// function clearFields(){
+//     document.getElementById("submitButtonForm").value = "";
+// }
 
-clearFields();
+// clearFields();

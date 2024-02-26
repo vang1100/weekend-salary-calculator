@@ -27,7 +27,7 @@
       Annual Salary: <input id="salary" data-testid="annualSalaryInput" type="number" />
       <br />
 
-    <button id="submitButtonForm" onClick="clearFields();" data-testid="submitButton">Submit</button>
+    <button id="submitButtonForm" onClick="clearFields()" data-testid="submitButton">Submit</button>
 
   </form>
 
@@ -65,8 +65,10 @@
   </main>
 
   <footer>
-    <p>Total Monthly</p>
+    <p>Total Monthly: $<span>0</span></span>
+    </p>
   </footer>
+
   <script src="client.js"></script>
 </div>
 </body>
