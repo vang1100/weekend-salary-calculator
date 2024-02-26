@@ -5,11 +5,19 @@ function submitForm(event){
     event.preventDefault();
     let employeeTable = document.querySelector('#peopleData');
     let firstNameVal = document.querySelector('#firstName').value;
-    console.log(firstName);
+    let lastNameVal = document.querySelector('#lastName').value;
+    let id = document.querySelector('#idNum').value;
+    let jobTitle = document.querySelector('#position').value;
+    let annualSalary = document.querySelector('#salary').value;
+    //console.log(firstName);
 
     employeeTable.innerHTML += `
     <tr>
         <td>${firstNameVal}<td>
+        <td>${lastNameVal}<td>
+        <td>${id}<td>
+        <td>${jobTitle}<td>
+        <td>${annualSalary}<td>
         <td><button onClick="deleteRemove(event)" class="remove-button">Remove</button></td>
     </tr>
     `
