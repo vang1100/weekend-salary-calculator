@@ -36,3 +36,10 @@ function deleteRemove(event){
 // }
 
 // clearFields();
+
+function calculateSalary () {
+    let totalMonthly = document.querySelector('span').innerText;
+    console.log('testing total monthly', totalMonthly);
+}
+
+calculateSalary();
