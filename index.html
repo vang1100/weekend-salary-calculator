@@ -7,16 +7,32 @@
 </head>
 
 <body>
+
   <header>
     <h1>Salary Calculator</h1>
-  </header>
+  </header> 
+
   <main>
+
+    <form class="salary-form" onSubmit="submitForm(event)">
+      First Name: <input data-testid="firstNameInput" type="text" /><br />
+      Last Name: <input data-testid="lastNameInput" type="text" /><br />
+      ID #: <input data-testid="idInput" type="number" /><br />
+      Job Title: <input data-testid="titleInput" type="text" /><br />
+      Annual Salary: <input data-testid="annualSalaryInput" type="number" /><br />
+
+    <button data-testid="submitButton">Submit</button>
+
+  </form>
+
     <h2>Add Employee</h2>
     <h2>Employees</h2>
   </main>
+
   <footer>
     <p>Total Monthly</p>
   </footer>
+
 </body>
 
 </html>
