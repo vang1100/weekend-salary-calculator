@@ -1,5 +1,7 @@
 console.log('hello world');
 
+let employeeSalary=0;
+
 function submitForm(event){
     console.log('submit');
     event.preventDefault();
@@ -13,12 +15,17 @@ function submitForm(event){
 
     employeeTable.innerHTML += `
     <tr>
-        <td>${firstNameVal}<td>
-        <td>${lastNameVal}<td>
-        <td>${id}<td>
-        <td>${jobTitle}<td>
-        <td>${annualSalary}<td>
+        <td>${firstNameVal}</td>
+        <td>${lastNameVal}</td>
+        <td>${id}</td>
+        <td>${jobTitle}</td>
+        <td>${annualSalary}</td>
         <td><button onClick="deleteRemove(event)" class="remove-button">Remove</button></td>
     </tr>
     `
+}
+
+function deleteRemove(event){
+    console.log(event.target);
+    event.target.parentElement.parentElement.remove();
 }
