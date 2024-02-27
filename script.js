@@ -23,19 +23,20 @@ function submitForm(event){
         <td><button onClick="deleteRemove(event)" class="remove-button">Remove</button></td>
     </tr>
     `
-    
+    clearFields();
 }
+
+
+
 
 function deleteRemove(event){
     console.log(event.target);
     event.target.parentElement.parentElement.remove();
 }
 
-// function clearFields(){
-//     document.getElementById("submitButtonForm").value = "";
-// }
-
-// clearFields();
+function clearFields(){
+    document.getElementById("submitButtonForm").value = "";
+}
 
 // function calculateSalary () {
 //     let totalMonthly = document.querySelector('span').innerText;
@@ -43,12 +44,12 @@ function deleteRemove(event){
 //     return totalMonthly += annualSalary;
 // }
 
-function add(){
-    let annualSalary = document.querySelector('#salary').value;
-    return totalAnnualSalary += annualSalary;
-}
+// function add(){
+//     let annualSalary = document.querySelector('#salary').value;
+//     return totalAnnualSalary += annualSalary;
+//}
 
-add();
-console.log('totalAnnualSalary:', totalAnnualSalary);
+// add();
+// console.log('totalAnnualSalary:', totalAnnualSalary);
 
 //document.querySelector('span').innerText = `${totalAnnualSalary / 12}`;
