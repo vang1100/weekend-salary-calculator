@@ -37,10 +37,18 @@ function deleteRemove(event){
 
 // clearFields();
 
-function calculateSalary () {
-    let totalMonthly = document.querySelector('span').innerText;
-    console.log('testing total monthly', totalMonthly);
-    return totalMonthly += annualSalary;
+// function calculateSalary () {
+//     let totalMonthly = document.querySelector('span').innerText;
+//     console.log('testing total monthly', totalMonthly);
+//     return totalMonthly += annualSalary;
+// }
+
+function add(){
+    let annualSalary = document.querySelector('#salary').value;
+    return totalAnnualSalary += annualSalary;
 }
 
-calculateSalary();
+add();
+console.log('totalAnnualSalary:', totalAnnualSalary);
+
+//document.querySelector('span').innerText = `${totalAnnualSalary / 12}`;
