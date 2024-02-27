@@ -23,10 +23,10 @@ function submitForm(event){
         <td><button onClick="deleteRemove(event)" class="remove-button">Remove</button></td>
     </tr>
     `
-
+    clearFields();
 }
 
-clearFields();
+
 
 
 function deleteRemove(event){
@@ -35,8 +35,14 @@ function deleteRemove(event){
 }
 
 function clearFields(){
-    document.getElementById("submitButtonForm").value = "";
+ document.getElementById("firstName").value = "";
+ document.getElementById("lastName").value = "";
+ document.getElementById("idNum").value = "";
+ document.getElementById("position").value = "";
+ document.getElementById("salary").value = "";
 }
+
+
 
 // function calculateSalary () {
 //     let totalMonthly = document.querySelector('span').innerText;
