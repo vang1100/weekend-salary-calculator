@@ -23,10 +23,10 @@ function submitForm(event){
         <td><button onClick="deleteRemove(event)" class="remove-button">Remove</button></td>
     </tr>
     `
-    clearFields();
+
 }
 
-
+clearFields();
 
 
 function deleteRemove(event){
