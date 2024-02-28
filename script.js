@@ -1,6 +1,7 @@
 console.log('hello world');
 
-let totalAnnualSalary=0;
+let salaryCombined = 0;
+let monthlySalary = 0;
 
 function submitForm(event){
     console.log('submit');
@@ -24,6 +25,16 @@ function submitForm(event){
     </tr>
     `
     clearFields();
+
+let totalMonthly = document.querySelector('span').innerText;
+
+salaryCombined += Number(annualSalary);
+ console.log('Combined salary:', salaryCombined);
+monthlySalary = salaryCombined / 12;
+// appeneding the monthly pay to the DOM
+totalMonthly.innerHTML = `
+<p>Total Monthly: $${monthlySalary}</p>
+`
 }
 
 
@@ -42,12 +53,5 @@ function clearFields(){
  document.getElementById("salary").value = "";
 }
 
-let annualSalary = document.querySelector('#salary').value;
-
-totalAnualSalary += Number(annualSalary);
-
-console.log('totalAnualSalary:', totalAnualSalary);
-
-document.querySelector('span').innerText = `${totalAnualSalary / 12}`;
 
 
