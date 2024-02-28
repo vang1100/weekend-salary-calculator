@@ -26,7 +26,7 @@ function submitForm(event){
     `
     clearFields();
 
-let totalMonthly = document.querySelector('span').innerText;
+let totalMonthly = document.querySelector('#total-monthly');
 
 salaryCombined += Number(annualSalary);
  console.log('Combined salary:', salaryCombined);
