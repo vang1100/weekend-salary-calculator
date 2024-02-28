@@ -57,7 +57,8 @@ function clearFields(){
 
 function overBudget() {
 if (monthlySalary > 20000)
-    console.log('Over budget');
+console.log('over budget!');
+return document.getElementById("salary").classList.add('footer');
 }
 
 overBudget();
