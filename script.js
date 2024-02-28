@@ -35,6 +35,8 @@ monthlySalary = salaryCombined / 12;
 totalMonthly.innerHTML = `
 <p>Total Monthly: $${monthlySalary}</p>
 `
+
+overBudget();
 }
 
 
@@ -53,5 +55,9 @@ function clearFields(){
  document.getElementById("salary").value = "";
 }
 
+function overBudget() {
+if (monthlySalary > 20000)
+    console.log('Over budget');
+}
 
-
+overBudget();
