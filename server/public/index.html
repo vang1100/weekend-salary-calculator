@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <title>Salary Calculator</title>
+</head>
+<div id="content">
+
+  <h1>Add Employee</h1>
+  <form class="salary-form" onSubmit="submitForm(event)">
+    <input id="fName-input" data-testid="firstNameInput" type="text" placeholder="First Name">
+    <input id="lName-input" data-testid="lastNameInput" type="text" placeholder="Last Name">
+    <input id="id-input" data-testid="idInput" type="number" placeholder="ID Number">
+    <input id="title-input" data-testid="titleInput" type="text" placeholder="Job Title">
+    <input id="aSalary-input" data-testid="annualSalaryInput" type="number" placeholder="Annual Salary">
+    <input type="submit" value="SUBMIT" />
+  </form>
+<br><br>
+  <table id="employees">
+    <thead>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Employee ID</th>
+        <th>Job Title</th>
+        <th>Annual Salary</th>
+      </tr>
+    </thead>
+  <tbody id="employeeData">
+    <tr>
+      <td>Test</td>
+      <td>Test</td>
+      <td>1234567890</td>
+      <td>Test</td>
+      <td>10000</td>
+    </tr>
+  </tbody>
+  </table>
+  <div>
+  <footer>
+    <p>Total Monthly</p>
+  </footer>
+  </div>
+
+</div>
+  <script src="scripts/client.js"></script>
+</body>
+</html>
