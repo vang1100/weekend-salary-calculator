@@ -27,6 +27,7 @@ function submitForm(event){
         <td>${id}</td>
         <td>${title}</td>
         <td>${salary}</td>
+        <td><button data-testid="submitButton" onClick="delete(event)">Delete</button></td>
     
     </tr>
     `;
