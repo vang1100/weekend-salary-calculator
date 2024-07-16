@@ -6,11 +6,14 @@ console.log('hello js');
 // let fName = document.querySelector('#fName-input').value;
 // let employeeData = document.querySelector('#employeeData');
 
+let total = 0;
+let monthly = 0;
+
 
 
 function submitForm(event){
     event.preventDefault();
-    console.log('checking button');
+   // console.log('checking button');
 
     let fName = document.querySelector('#fName-input').value;
     let lName = document.querySelector('#lName-input').value;
@@ -18,6 +21,7 @@ function submitForm(event){
     let title = document.querySelector('#title-input').value;
     let salary = document.querySelector('#aSalary-input').value;
     let employeeData = document.querySelector('#employeeData');
+    //let totalAnnualSalary = 0;
 
     //console.log('first name', fName);
     employeeData.innerHTML += `
@@ -31,6 +35,21 @@ function submitForm(event){
     
     </tr>
     `;
+
+    
+
+    total += Number(salary);
+    //console.log(total);
+    monthly = total/12;
+    console.log(monthly);
+ 
+    let totalDiv = document.querySelector('#total');
+
+    totalDiv.innerHTML = `
+    <h1>Total Monthly: ${monthly}</h1>
+    `;
+
+    turnRed();
 }
 
 // this function will delete the rows
@@ -46,3 +65,12 @@ function deleteRow(event){
 
   deleteRow.remove();
 }
+
+
+function turnRed(){
+    if(monthly > 20000 ) {
+        alert('OVER THE BUDGET');
+    }
+}
+
+
