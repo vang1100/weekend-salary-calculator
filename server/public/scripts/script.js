@@ -49,6 +49,13 @@ function submitForm(event){
     <h1>Total Monthly: ${monthly}</h1>
     `;
 
+    document.querySelector('#fName-input').value = '';
+    document.querySelector('#lName-input').value = '';
+    document.querySelector('#id-input').value = '';
+    document.querySelector('#title-input').value = '';
+    document.querySelector('#aSalary-input').value = '';
+
+
     turnRed();
 }
 
@@ -68,8 +75,11 @@ function deleteRow(event){
 
 
 function turnRed(){
+
+    let background = document.querySelector('footer').classList.add('over-budget');
+    
     if(monthly > 20000 ) {
-        alert('OVER THE BUDGET');
+        return  background;
     }
 }
 
